@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="AKLI Sara">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="enseignant.css">
+    <title>Gestion des emplois du temps | Etudiant</title>
+</head>
+<body>
+    <div class="top-bar">
+        <ul>
+            <li><a href="Accueil.html">Accueil</a></li>
+            <li><a href="index.html">Connexion</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <h1>Etudiant</h1>
+        <label for="level-select">Niveau :</label>
+        <select id="level-select">
+            <option value="L1 ISIL">L1 ISIL</option>
+            <option value="L1 ACAD">L1 ACAD</option>
+            <option value="L2 ISIL">L2 ISIL</option>
+            <option value="L2 ACAD">L2 ACAD</option>
+            <option value="L3 ISIL">L3 ISIL</option>
+            <option value="L3 ACAD">L3 ACAD</option>
+            <option value="L1 ingenieur">L1 ingenieur</option>
+            <option value="L2 ingenieur">L2 ingenieur</option>
+        </select>
+        <label for="section-select">Section :</label>
+        <select id="section-select" disabled>
+            <option value="">Choisissez d'abord le niveau</option>
+        </select>
+        <div id="schedule"></div>
+    </div>
+
+    <script src="etudiantscript.js"></script>
+</body>
+</html>
